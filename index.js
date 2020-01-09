@@ -9,13 +9,19 @@ doors close when elevator leaves floors
 20 second delay until doors close - closes in 10 seconds if door close button is pressed
 
 once a floor is selected, a signal goes to a computer/engine room that logs the floor - the buttons on the elevator car and floor are wired to the same computer, doors close and the lever/pulley start and move to the selected floor. elevator stops at the selected floor
-multiple floors can be selected when in the elevator
+multiple floors can be selected when in the elevatorv
+need to know current floor
+if up then add floor to list of floors
 if multiple floors are selected at floor 1 then go up until floor 8
+if down then add floor to list of down floors
 if multiple floors are selected at floor 8 then go down until reach floor 1
 
 when pressed the computer logs the floor and numbers light up inside the elevator, turn off when make it to the floor.
 
 when pressed the computer logs the request outside the elevator and lights up and turns off the light when the elevator arrives. then the door opens.
+
+if no floors selected then elevator will stay at floor 1
+always resets to floor 1
 
 //Elevator motor
 var isOn = true;
@@ -29,4 +35,4 @@ var isOpen = true;
 var isClosed = false;
 
 //Elevator lights
-var 
+var
